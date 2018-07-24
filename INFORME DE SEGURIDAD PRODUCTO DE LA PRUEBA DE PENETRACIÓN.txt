@@ -34,7 +34,7 @@ Para la realización de esta prueba, se ha de modificar en primer lugar la confi
 
 Una vez se ha conectado el dispositivo al ordenador de prueba, se ejecuta el programa encargado de esta fase de la prueba, el cual toma los datos del navegador y los almacena en la tarjeta de memoria del dispositivo.
 
-***Dichos datos serán eliminados tras la prueba, en base a la ley de protección de datos, UE 2016/679.***
+***Dichos datos serán eliminados tras la prueba, en base a la ley de protección de datos, UE 2016/679. ***
 
 ### PRUEBA DE EJECUCIÓN DE UN PROGRAMA Y TRANSPASO DEL INFORME DE SEGURIDAD
 #### Proceso realizado mediante el módulo *hid_keyboard*
@@ -45,32 +45,34 @@ Para ello, se ejecutará un pequeño programa de prueba el cual abrirá un solo 
 
 ## MEDIDAS QUE HAN DE SER TOMANDAS LOS RESULTADOS DE LA PRUEBA DE PENETRACIÓN
 
-En este apartado se expondrán las diversas medidas de seguridad tanto físicas como informaticas, que se han de tomar para mejorar la seguridad del sistema informatico objetivo de la prueba de penetración.
+En este apartado se expondrán las diversas medidas de seguridad tanto físicas como informáticas, que se han de tomar para mejorar la seguridad del sistema informático objetivo de la prueba de penetración.
 
 ### MEDIDAS FÍSICAS
 
 1. Bloqueo de todos los conectores USB, del ordenador; la forma más eficiente de realizar esta operación es introducir el ordenador al completo en un armario, de un material robusto, que disponga de:
- 	- Rejillas de ventalización, que permita un optimo flujo de aire, para evitar posibles problemas de ventilación
+ 	- Rejillas de ventilación, que permita un óptimo flujo de aire, para evitar posibles problemas de ventilación
 	- Salida de cableado de alimentación y periféricos, dicha salida no debe permitir el acceso físico a ningún conector del ordenador.
 	- Botón de encendido externo.
 2. Evitar la utilización de periféricos o cualquier dispositivo USB, no identificado, para realizar el proceso de identificación se recomienda disponer de un ordenador de bajo coste, por ejemplo, un miniordenador de 100€, con Windows 10 al que no se le ha agregado programa alguno, al que conectar los distintos dispositivos USB, por primera vez. 
 
 ### MEDIDAS SOFTWARE
 
-1. Modificación de la contraseña utilizada, se recomienda utilizar una contraseña superior a 12 digitos y la renovación de esta de manera periódica cada 1 o 3 meses. A la hora hora de crear dicha contraseña se ha de tener en cuenta una serie de cuestiones:
+1. Modificación de la contraseña utilizada, se recomienda utilizar una contraseña superior a 12 dígitos y la renovación de esta de manera periódica cada 1 o 3 meses. A la hora de crear dicha contraseña se ha de tener en cuenta una serie de cuestiones:
 	1. No utilizar, nombres propios y/o fechas
 	2. Crearla a partir de una frase o combinación de palabras, teniendo en cuenta que no deben ser ni frase conocidas ni palabras que hagan referencia a un elemento cultural conocido.
 	3. Sustitución de letras por números de manera aleatoria
 	4. Eliminación de vocales para modificar aún más la palabra inicial.
-	5. Mezclar el orden de las sílabas una vez realizados lo pasos anteriores.
+	5. Mezclar el orden de las sílabas una vez realizados los pasos anteriores.
 
 2. Instalar un navegador distinto al predeterminado por el sistema operativo, algunos de los recomendados son Opera o Chrome.
-2. Deshabilitar el guardado de cualquier tipo de contraseña en el navegador, es preferible memorizarlas, o en caso de de que esto sea imposible guardarlas en una libreta que lleve el usuario consigo mismo; tampoco es recomendable el guardado de usuarios. 
+2. Deshabilitar el guardado de cualquier tipo de contraseña en el navegador, es preferible memorizarlas, o en caso de que esto sea imposible guardarlas en una libreta que lleve el usuario consigo mismo; tampoco es recomendable el guardado de usuarios. 
 3. Acceder al correo o sitios webs con información crítica desde el *modo incognito* del navegador, debido a que una vez finalizada la sesión se borran, del ordenador, todos los datos. En el caso de Opera o Chrome, se puede activar mediante el atajo de teclado CTRL + SHIFT DER + N.
-4. Instalación de un software destinado a la detección y bloqueo de posibles ataques de *USB Rubber Ducky*, en este caso se recomienda Beamgun, el cual esta disponible aquí: https://github.com/JLospinoso/beamgun.
+4. Instalación de un software destinado a la detección y bloqueo de posibles ataques de *USB Rubber Ducky*, en este caso se recomienda Beamgun, el cual está disponible aquí: https://github.com/JLospinoso/beamgun.
 
 Con la combinación de todas estas medidas se podrá mejorar la seguridad del sistema informativo, para evitar la mayoría de posibles ataques que exploten las vulnerabilidades del estándar USB.
 
-Para más información sobre el proceso visite: https://github.com/Jmg20/TUSB/blob/master/INFORME%20DE%20SEGURIDAD%20PRODUCTO%20DE%20LA%20PRUEBA%20DE%20PENETRACI%C3%93N.txt
+Para más información visite:
+https://github.com/Jmg20/TUSB/blob/master/INFORME%20DE%20SEGURIDAD%20PRODUCTO%20DE%20LA%20PRUEBA%20DE%20PENETRACI%C3%93N.txt
 
-NOTA: El presente informe a sido creado con el lenguaje de texto *Markdown*, si desea verlo más claramente puede copiar este texto en cualquier editor online de *Markdown*, como https://stackedit.io 
+NOTA: El presente informe ha sido creado con el lenguaje de texto *Markdown*, si desea verlo más claramente puede copiar este texto en cualquier editor online de *Markdown*, como https://stackedit.io 
+
