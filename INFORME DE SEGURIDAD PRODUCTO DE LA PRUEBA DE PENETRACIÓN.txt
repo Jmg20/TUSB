@@ -1,76 +1,76 @@
-# INFORME DE SEGURIDAD PRODUCTO DE LA PRUEBA DE PENETRACI”N
-#### Autor del informe: Jose Manuel GÛmez BenÌtez
+# INFORME DE SEGURIDAD PRODUCTO DE LA PRUEBA DE PENETRACI√ìN
+#### Autor del informe: Jose Manuel G√≥mez Ben√≠tez
 
-## FASES DE LA PRUEBA DE PENETRACI”N
+## FASES DE LA PRUEBA DE PENETRACI√ìN
 
-Esta prueba de penetraciÛn busca ir accediendo de manera progresivamente al ordenador de prueba, obteniendo en el proceso la informaciÛn sobre el sistema de seguridad inform·tica que lo protege.
+Esta prueba de penetraci√≥n busca ir accediendo de manera progresivamente al ordenador de prueba, obteniendo en el proceso la informaci√≥n sobre el sistema de seguridad inform√°tica que lo protege.
 
-Para ello se utilizar·, una plataforma conformada por una Raspberry Pi Zero W, con el sistema operativo Raspbian Lite, sobre el que se ha instalado el software libre *P4wnP1*.
+Para ello se utilizar√°, una plataforma conformada por una Raspberry Pi Zero W, con el sistema operativo Raspbian Lite, sobre el que se ha instalado el software libre *P4wnP1*.
 
-Dicho proceso est· conformado por un total de 3 fases:
+Dicho proceso est√° conformado por un total de 3 fases:
 
-1. **Desbloqueo del ordenador de prueba**. En esta fase, se intentar· desbloquear el ordenador de prueba sin conocimiento previo sobre el usuario o la contraseÒa, esta ˙ltima se averiguar· en caso de que la prueba tenga existo.
+1. **Desbloqueo del ordenador de prueba**. En esta fase, se intentar√° desbloquear el ordenador de prueba sin conocimiento previo sobre el usuario o la contrase√±a, esta √∫ltima se averiguar√° en caso de que la prueba tenga existo.
 
-2. **Acceso a las credenciales de navegaciÛn**. En este paso, se acceder· al navegador predeterminado de Windows 10, Microsoft Edge, y se sustraer· todas las credenciales almacenadas en Èl. 
+2. **Acceso a las credenciales de navegaci√≥n**. En este paso, se acceder√° al navegador predeterminado de Windows 10, Microsoft Edge, y se sustraer√° todas las credenciales almacenadas en √©l. 
 
-3. **Prueba de ejecuciÛn de un programa y traspaso del informe de seguridad**. Es este ˙ltimo paso se proceder· a ejecutar una serie de comandos en Windows, para abrir el programa Notepad, y escribir en Èl, el presente informe.
+3. **Prueba de ejecuci√≥n de un programa y traspaso del informe de seguridad**. Es este √∫ltimo paso se proceder√° a ejecutar una serie de comandos en Windows, para abrir el programa Notepad, y escribir en √©l, el presente informe.
 
 ### DESBLOQUEO DEL ORDENADOR DE PRUEBA 
-#### Proceso realizado mediante el mÛdulo *Windows 10 LockPicker*
+#### Proceso realizado mediante el m√≥dulo *Windows 10 LockPicker*
 
-En este paso, el dispositivo utilizado para la realizaciÛn de la prueba se conectar· a cualquiera de los m˙ltiples puertos USB del ordenador de prueba; en caso de que se trate de un ordenador de sobremesa se priorizar· buscar un puerto libre, al que conectar el dispositivo, en la parte trasera del ordenador, pues en dicha posiciÛn se puede ocultar con mayor facilidad el dispositivo. 
-Una vez conectado el dispositivo, ese iniciar· el proceso de desbloqueo del ordenador, dicho proceso llevar· m·s o menos tiempo dependiendo de la fortaleza de la contraseÒa utilizada para bloquear el ordenador.
+En este paso, el dispositivo utilizado para la realizaci√≥n de la prueba se conectar√° a cualquiera de los m√∫ltiples puertos USB del ordenador de prueba; en caso de que se trate de un ordenador de sobremesa se priorizar√° buscar un puerto libre, al que conectar el dispositivo, en la parte trasera del ordenador, pues en dicha posici√≥n se puede ocultar con mayor facilidad el dispositivo. 
+Una vez conectado el dispositivo, ese iniciar√° el proceso de desbloqueo del ordenador, dicho proceso llevar√° m√°s o menos tiempo dependiendo de la fortaleza de la contrase√±a utilizada para bloquear el ordenador.
 
 Este punto tiene por tanto una doble finalidad: 
 - Acceder al ordenador para continuar con el resto de las fases.
-- Comprobar si el usuario del ordenador utiliza contraseÒas insuficientemente complejas.
+- Comprobar si el usuario del ordenador utiliza contrase√±as insuficientemente complejas.
 
 ### CAPTURA DE CREDENCIALES DEL NAVEGADOR
-#### Proceso realizado mediante el mÛdulo *Hakin9*
+#### Proceso realizado mediante el m√≥dulo *Hakin9*
 
-Esta fase busca comprobar si el usuario del ordenador de prueba accede de manera segura y teniendo en cuenta la importancia de guardar adecuadamente las diversas contraseÒas y usuarios con los que acceder a los diversos sitios web.
+Esta fase busca comprobar si el usuario del ordenador de prueba accede de manera segura y teniendo en cuenta la importancia de guardar adecuadamente las diversas contrase√±as y usuarios con los que acceder a los diversos sitios web.
 
-Para la realizaciÛn de esta prueba, se ha de modificar en primer lugar la configuraciÛn software de la plataforma de pentest, desde el ordenador de control, tras esto se reconecta la plataforma de nuevo.
+Para la realizaci√≥n de esta prueba, se ha de modificar en primer lugar la configuraci√≥n software de la plataforma de pentest, desde el ordenador de control, tras esto se reconecta la plataforma de nuevo.
 
 Una vez se ha conectado el dispositivo al ordenador de prueba, se ejecuta el programa encargado de esta fase de la prueba, el cual toma los datos del navegador y los almacena en la tarjeta de memoria del dispositivo.
 
-***Dichos datos ser·n eliminados tras la prueba, en base a la ley de protecciÛn de datos, UE 2016/679.***
+***Dichos datos ser√°n eliminados tras la prueba, en base a la ley de protecci√≥n de datos, UE 2016/679.***
 
-### PRUEBA DE EJECUCI”N DE UN PROGRAMA Y TRANSPASO DEL INFORME DE SEGURIDAD
-#### Proceso realizado mediante el mÛdulo *hid_keyboard*
+### PRUEBA DE EJECUCI√ìN DE UN PROGRAMA Y TRANSPASO DEL INFORME DE SEGURIDAD
+#### Proceso realizado mediante el m√≥dulo *hid_keyboard*
 
-Esta ˙ltima prueba, busca comprobar si el usuario del ordenador de prueba dispone de alguna contramedida que evite la ejecuciÛn de comandos que permitan controlar el ordenador de manera temporal de igual manera que el administrador del ordenador.
+Esta √∫ltima prueba, busca comprobar si el usuario del ordenador de prueba dispone de alguna contramedida que evite la ejecuci√≥n de comandos que permitan controlar el ordenador de manera temporal de igual manera que el administrador del ordenador.
 
-Para ello, se ejecutar· un pequeÒo programa de prueba el cual abrir· un solo programa, Notepad, transcribir· de manera completa el presente informe y lo guardar· en el escritorio del ordenador. 
+Para ello, se ejecutar√° un peque√±o programa de prueba el cual abrir√° un solo programa, Notepad, transcribir√° de manera completa el presente informe y lo guardar√° en el escritorio del ordenador. 
 
-## MEDIDAS QUE HAN DE SER TOMANDAS LOS RESULTADOS DE LA PRUEBA DE PENETRACI”N
+## MEDIDAS QUE HAN DE SER TOMANDAS LOS RESULTADOS DE LA PRUEBA DE PENETRACI√ìN
 
-En este apartado se expondr·n las diversas medidas de seguridad tanto fÌsicas como informaticas, que se han de tomar para mejorar la seguridad del sistema informatico objetivo de la prueba de penetraciÛn.
+En este apartado se expondr√°n las diversas medidas de seguridad tanto f√≠sicas como informaticas, que se han de tomar para mejorar la seguridad del sistema informatico objetivo de la prueba de penetraci√≥n.
 
-### MEDIDAS FÕSICAS
+### MEDIDAS F√çSICAS
 
-1. Bloqueo de todos los conectores USB, del ordenador; la forma m·s eficiente de realizar esta operaciÛn es introducir el ordenador al completo en un armario, de un material robusto, que disponga de:
- 	- Rejillas de ventalizaciÛn, que permita un optimo flujo de aire, para evitar posibles problemas de ventilaciÛn
-	- Salida de cableado de alimentaciÛn y perifÈricos, dicha salida no debe permitir el acceso fÌsico a ning˙n conector del ordenador.
-	- BotÛn de encendido externo.
-2. Evitar la utilizaciÛn de perifÈricos o cualquier dispositivo USB, no identificado, para realizar el proceso de identificaciÛn se recomienda disponer de un ordenador de bajo coste, por ejemplo, un miniordenador de 100Ä, con Windows 10 al que no se le ha agregado programa alguno, al que conectar los distintos dispositivos USB, por primera vez. 
+1. Bloqueo de todos los conectores USB, del ordenador; la forma m√°s eficiente de realizar esta operaci√≥n es introducir el ordenador al completo en un armario, de un material robusto, que disponga de:
+ 	- Rejillas de ventalizaci√≥n, que permita un optimo flujo de aire, para evitar posibles problemas de ventilaci√≥n
+	- Salida de cableado de alimentaci√≥n y perif√©ricos, dicha salida no debe permitir el acceso f√≠sico a ning√∫n conector del ordenador.
+	- Bot√≥n de encendido externo.
+2. Evitar la utilizaci√≥n de perif√©ricos o cualquier dispositivo USB, no identificado, para realizar el proceso de identificaci√≥n se recomienda disponer de un ordenador de bajo coste, por ejemplo, un miniordenador de 100‚Ç¨, con Windows 10 al que no se le ha agregado programa alguno, al que conectar los distintos dispositivos USB, por primera vez. 
 
 ### MEDIDAS SOFTWARE
 
-1. ModificaciÛn de la contraseÒa utilizada, se recomienda utilizar una contraseÒa superior a 12 digitos y la renovaciÛn de esta de manera periÛdica cada 1 o 3 meses. A la hora hora de crear dicha contraseÒa se ha de tener en cuenta una serie de cuestiones:
+1. Modificaci√≥n de la contrase√±a utilizada, se recomienda utilizar una contrase√±a superior a 12 digitos y la renovaci√≥n de esta de manera peri√≥dica cada 1 o 3 meses. A la hora hora de crear dicha contrase√±a se ha de tener en cuenta una serie de cuestiones:
 	1. No utilizar, nombres propios y/o fechas
-	2. Crearla a partir de una frase o combinaciÛn de palabras, teniendo en cuenta que no deben ser ni frase conocidas ni palabras que hagan referencia a un elemento cultural conocido.
-	3. SustituciÛn de letras por n˙meros de manera aleatoria
-	4. EliminaciÛn de vocales para modificar a˙n m·s la palabra inicial.
-	5. Mezclar el orden de las sÌlabas una vez realizados lo pasos anteriores.
+	2. Crearla a partir de una frase o combinaci√≥n de palabras, teniendo en cuenta que no deben ser ni frase conocidas ni palabras que hagan referencia a un elemento cultural conocido.
+	3. Sustituci√≥n de letras por n√∫meros de manera aleatoria
+	4. Eliminaci√≥n de vocales para modificar a√∫n m√°s la palabra inicial.
+	5. Mezclar el orden de las s√≠labas una vez realizados lo pasos anteriores.
 
 2. Instalar un navegador distinto al predeterminado por el sistema operativo, algunos de los recomendados son Opera o Chrome.
-2. Deshabilitar el guardado de cualquier tipo de contraseÒa en el navegador, es preferible memorizarlas, o en caso de de que esto sea imposible guardarlas en una libreta que lleve el usuario consigo mismo; tampoco es recomendable el guardado de usuarios. 
-3. Acceder al correo o sitios webs con informaciÛn crÌtica desde el *modo incognito* del navegador, debido a que una vez finalizada la sesiÛn se borran, del ordenador, todos los datos. En el caso de Opera o Chrome, se puede activar mediante el atajo de teclado CTRL + SHIFT DER + N.
-4. InstalaciÛn de un software destinado a la detecciÛn y bloqueo de posibles ataques de *USB Rubber Ducky*, en este caso se recomienda Beamgun, el cual esta disponible aquÌ: https://github.com/JLospinoso/beamgun.
+2. Deshabilitar el guardado de cualquier tipo de contrase√±a en el navegador, es preferible memorizarlas, o en caso de de que esto sea imposible guardarlas en una libreta que lleve el usuario consigo mismo; tampoco es recomendable el guardado de usuarios. 
+3. Acceder al correo o sitios webs con informaci√≥n cr√≠tica desde el *modo incognito* del navegador, debido a que una vez finalizada la sesi√≥n se borran, del ordenador, todos los datos. En el caso de Opera o Chrome, se puede activar mediante el atajo de teclado CTRL + SHIFT DER + N.
+4. Instalaci√≥n de un software destinado a la detecci√≥n y bloqueo de posibles ataques de *USB Rubber Ducky*, en este caso se recomienda Beamgun, el cual esta disponible aqu√≠: https://github.com/JLospinoso/beamgun.
 
-Con la combinaciÛn de todas estas medidas se podr· mejorar la seguridad del sistema informativo, para evitar la mayorÌa de posibles ataques que exploten las vulnerabilidades del est·ndar USB.
+Con la combinaci√≥n de todas estas medidas se podr√° mejorar la seguridad del sistema informativo, para evitar la mayor√≠a de posibles ataques que exploten las vulnerabilidades del est√°ndar USB.
 
-Para m·s informaciÛn sobre el proceso visite: 
+Para m√°s informaci√≥n sobre el proceso visite: https://github.com/Jmg20/TUSB/blob/master/INFORME%20DE%20SEGURIDAD%20PRODUCTO%20DE%20LA%20PRUEBA%20DE%20PENETRACI%C3%93N.txt
 
-NOTA: El presente informe a sido creado con el lenguaje de texto *Markdown*, si desea verlo m·s claramente puede copiar este texto en cualquier editor online de *Markdown*, como https://stackedit.io 
+NOTA: El presente informe a sido creado con el lenguaje de texto *Markdown*, si desea verlo m√°s claramente puede copiar este texto en cualquier editor online de *Markdown*, como https://stackedit.io 
